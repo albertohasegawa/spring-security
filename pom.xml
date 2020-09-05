@@ -10,13 +10,28 @@
 	<name>spring-security-demo</name>
 
 	<properties>
-		<springframework.version>5.0.2.RELEASE</springframework.version>
-
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+	<springframework.version>5.2.1.RELEASE</springframework.version>
+	<springsecurity.version>5.2.1.RELEASE</springsecurity.version>
+	
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
 	</properties>
 
 	<dependencies>
+	
+		<!--  Spring security web -->
+		<dependency>
+		  <groupId>org.springframework.security</groupId>
+		  <artifactId>spring-security-web</artifactId>
+		  <version>${springframework.version}</version>
+		</dependency>
+		
+		<!--  Spring security config -->
+		<dependency>
+		  <groupId>org.springframework.security</groupId>
+		  <artifactId>spring-security-config</artifactId>
+		  <version>${springsecurity.version}</version>
+		</dependency>
 
 		<!-- Spring MVC support -->
 		<dependency>
